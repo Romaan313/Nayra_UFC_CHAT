@@ -35,7 +35,7 @@ async def is_admins(chat_id: int):
     ]
 
 
-@bot.on_message(filters.command("start") & filters.private & ~filters.edited)
+@bot.on_message(filters.command("love") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_IMAGE}",
